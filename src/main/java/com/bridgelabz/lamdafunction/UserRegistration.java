@@ -1,7 +1,6 @@
 package com.bridgelabz.lamdafunction;
 
 import java.util.Scanner;
-
 public class UserRegistration {
 	public static void main(String[] args) {
 		UserInputValidation userInputValidation = new UserInputValidation();
@@ -12,7 +11,9 @@ public class UserRegistration {
         System.out.println("Enter last name: ");
         String lastName = scanner.next();
         System.out.println(UserInputValidation.isValidLastName(lastName) ? "Valid" : "In Valid");
+        System.out.println("Enter email: ");
+        String email = scanner.next();
+        System.out.println(UserInputValidation.isValidEmail(email) ? "Valid" : "In Valid");
         scanner.close();
 	}
 }
-	
