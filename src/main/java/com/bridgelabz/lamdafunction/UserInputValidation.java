@@ -36,7 +36,7 @@ public class UserInputValidation {
 		    }
 		  //Creating isValidMobileNumber method to validate the mobile format given by user using regex
 		    public static boolean isValidMobileNumber(String mobileNumber) {
-		        String mobileNumberRegex = "^[0-9]{2}[\\s][0-9]{10}$";
+		        String mobileNumberRegex = "^\\d{10}$";
 		        Pattern pattern = Pattern.compile(mobileNumberRegex);
 		        Matcher matcher = pattern.matcher(mobileNumber);
 		        return matcher.matches();
@@ -45,10 +45,9 @@ public class UserInputValidation {
 		  //Creating isValidPassword method to validate the password given by user using regex
 		    public static boolean isValidPassword(String password) {
 		        System.out.println(password);
-		        String passwordRegex = "^(.*).{8,}$";
+		        String passwordRegex = "^(?=.*[A-Z]{1}).{8,}$";
 		        Pattern pattern = Pattern.compile(passwordRegex);
 		        Matcher matcher = pattern.matcher(password);
 		        return matcher.matches();
 		    }
 	}	
-
