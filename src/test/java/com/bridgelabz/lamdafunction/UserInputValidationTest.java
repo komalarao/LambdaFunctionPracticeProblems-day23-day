@@ -8,19 +8,19 @@ public class UserInputValidationTest {
 	@Test
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
         UserInputValidation userInputValidation = new UserInputValidation();
-        boolean result = userInputValidation.isValidFirstName("Dipali");
+        boolean result = userInputValidation.isValidFirstName("Dipak");
         Assert.assertEquals(true, result);
     }
     @Test
     public void givenFirstName_WhenShort_ShouldReturnFalse() {
         UserInputValidation userInputValidation = new UserInputValidation();
-        boolean result = userInputValidation.isValidFirstName("Pr");
+        boolean result = userInputValidation.isValidFirstName("dr");
         Assert.assertEquals(false, result);
     }
     @Test
     public void givenLastName_WhenProper_ShouldReturnTrue() {
         UserInputValidation userInputValidation = new UserInputValidation();
-        boolean result = userInputValidation.isValidLastName("Sonawane");
+        boolean result = userInputValidation.isValidLastName("bhuwan");
         Assert.assertEquals(true, result);
     }
 
@@ -33,7 +33,7 @@ public class UserInputValidationTest {
     @Test
     public void givenEmail_WhenValid_ShouldReturnTrue() {
         UserInputValidation userInputValidation = new UserInputValidation();
-        boolean result = userInputValidation.isValidEmail("aryabhuwan730@gmail.com");
+        boolean result = userInputValidation.isValidEmail("kunalsonawane730@gmail.com");
         Assert.assertEquals(true, result);
     }
 

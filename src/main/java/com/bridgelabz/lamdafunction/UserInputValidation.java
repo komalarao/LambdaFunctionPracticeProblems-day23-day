@@ -45,7 +45,7 @@ public class UserInputValidation {
 		  //Creating isValidPassword method to validate the password given by user using regex
 		    public static boolean isValidPassword(String password) {
 		        System.out.println(password);
-		        String passwordRegex = "^(?=.*[A-Z]{1}).{8,}$";
+		        String passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$";
 		        Pattern pattern = Pattern.compile(passwordRegex);
 		        Matcher matcher = pattern.matcher(password);
 		        return matcher.matches();
